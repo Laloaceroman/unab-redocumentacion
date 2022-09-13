@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=90471" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=90471" type="text/javascript"></script>
+    <link href="css/main.css?v=74822" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=74822" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -77,33 +77,22 @@
                     <div class="section__payment__body"> 
                       <p class="section__description">Estos montos corresponden a tu último proceso de matrícula y los abonos a la fecha</p>
                       <div class="section__payment__value">Arancel período<span>$2.500.000</span>
-                        <div class="section__info">
+                        <div data-modal-info-1 class="section__info">
                           <div class="section__circle"><span>i</span></div>
-                          <div class="section__tooltip"> 
-                            <h5>Curso</h5>
-                            <p>Interdum vel tempor diam etiam vehicula tristique tempus vulputate massa. Luctus cubilia nec vel eget dictumst molestie curabitur id molestie taciti imperdiet aliquam porta egestas.
-                            </p>
-                          </div>
                         </div>
                       </div>
                       <div class="section__payment__value">CAE <span>$1.000.000</span></div>
                       <div class="section__payment__value">Becas y descuentos<span>- $200.000</span>
-                        <div class="section__info">
+                        <div data-modal-info-2 class="section__info">
                           <div class="section__circle"><span>i</span></div>
-                          <div class="section__tooltip"> 
-                            <h5>Curso</h5>
-                            <p>Enim proin morbi placerat phasellus nullam auctor quisque venenatis adipiscing. Pulvinar leo integer luctus placerat accumsan dictum himenaeos nullam id neque facilisis urna nibh netus.
-                            </p>
-                          </div>
                         </div>
                       </div>
                       <div class="section__payment__value">Abono arancel<span>- $100.000</span>
                         <div class="section__info">
                           <div class="section__circle"><span>i</span></div>
                           <div class="section__tooltip"> 
-                            <h5>Curso</h5>
-                            <p>Lectus luctus netus lacus mauris quisque torquent himenaeos donec cubilia. Justo quis a feugiat maecenas sodales himenaeos turpis etiam turpis dictumst dui litora nec lacus.
-                            </p>
+                            <h5>Abono arancel</h5>
+                            <p>Corresponde al abono que realizaste al momento de concretar tu Proceso de Matrícula del año en curso.</p>
                           </div>
                         </div>
                       </div>
@@ -113,13 +102,8 @@
                     </div>
                     <div class="section__payment__body">
                       <div class="section__payment__value">Cuotas pagadas<span>- $200.000</span>
-                        <div class="section__info">
+                        <div data-modal-info-4 class="section__info">
                           <div class="section__circle"><span>i</span></div>
-                          <div class="section__tooltip"> 
-                            <h5>Curso</h5>
-                            <p>Aptent lacus pulvinar curabitur donec sem vel augue ultrices blandit. A donec massa velit phasellus at nibh potenti molestie taciti proin auctor congue pharetra praesent.
-                            </p>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -139,22 +123,16 @@
                       <p class="section__description">Estos montos corresponden a tu CAE, becas y descuentos actualizados a la fecha</p>
                       <div class="section__payment__value">Saldo adeudado<span>$3.000.000</span></div>
                       <div class="section__payment__value">Nuevas becas y descuentos <span>- $400.000</span>
-                        <div class="section__info">
+                        <div data-modal-info-3 class="section__info">
                           <div class="section__circle"><span>i</span></div>
-                          <div class="section__tooltip"> 
-                            <h5>Curso</h5>
-                            <p>Quisque vehicula integer odio cubilia leo eu taciti maecenas proin. Sagittis vulputate eros vel arcu etiam urna curabitur venenatis ante dapibus lectus praesent malesuada gravida.
-                            </p>
-                          </div>
                         </div>
                       </div>
                       <div class="section__payment__value">Nuevo CAE<span>- $1.200.000</span>
                         <div class="section__info">
                           <div class="section__circle"><span>i</span></div>
                           <div class="section__tooltip"> 
-                            <h5>Curso</h5>
-                            <p>Habitant gravida tempus sapien morbi senectus hendrerit placerat sodales himenaeos. Curabitur facilisis turpis libero sed fermentum duis elit nec nullam dui diam fringilla dictumst luctus.
-                            </p>
+                            <h5>Nuevo CAE</h5>
+                            <p>Corresponde al crédito con aval del estado. Puedes utilizar el valor máximo permitido (Arancel de Referencia) o bien, un monto menor si así lo prefieres.</p>
                           </div>
                         </div>
                       </div>
@@ -180,6 +158,246 @@
           </form>
         </div>
       </section>
+      <div class="modal modal--info-1">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__header">
+              <h4 class="modal__title">Arancel período</h4>
+              <p class="modal__description">Corresponde a tu plan de pago en cuotas pactado:</p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__table"> 
+                <table> 
+                  <thead> 
+                    <tr> 
+                      <th>Cuota</th>
+                      <th>Fecha de vencimiento</th>
+                      <th>Monto</th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                    <tr> 
+                      <td>1</td>
+                      <td>01-03-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>2</td>
+                      <td>01-04-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>3</td>
+                      <td>01-05-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>4</td>
+                      <td>01-06-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>5</td>
+                      <td>01-07-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>6</td>
+                      <td>01-08-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>7</td>
+                      <td>01-09-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>01-10-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>9</td>
+                      <td>01-11-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>10</td>
+                      <td>01-12-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td> </td>
+                      <td><strong>Total</strong></td>
+                      <td><strong>$2.500.0000</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--info-4">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__header">
+              <h4 class="modal__title">Cuotas pagadas</h4>
+              <p class="modal__description">Corresponde a tu plan de pago en cuotas pactado:</p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__table"> 
+                <table> 
+                  <thead> 
+                    <tr> 
+                      <th>Cuota</th>
+                      <th>Fecha de vencimiento</th>
+                      <th>Monto</th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                    <tr> 
+                      <td>1</td>
+                      <td>01-03-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>2</td>
+                      <td>01-04-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>3</td>
+                      <td>01-05-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>4</td>
+                      <td>01-06-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>5</td>
+                      <td>01-07-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>6</td>
+                      <td>01-08-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>7</td>
+                      <td>01-09-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>01-10-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>9</td>
+                      <td>01-11-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td>10</td>
+                      <td>01-12-22</td>
+                      <td>$250.000</td>
+                    </tr>
+                    <tr> 
+                      <td> </td>
+                      <td><strong>Total</strong></td>
+                      <td><strong>$2.500.0000</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--info-2">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__header">
+              <h4 class="modal__title">Becas y descuentos</h4>
+              <p class="modal__description">Corresponde a las becas y descuentos que obtuviste al momento de matricularte:</p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__table"> 
+                <table> 
+                  <thead> 
+                    <tr> 
+                      <th>Beneficio</th>
+                      <th>Monto</th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                    <tr> 
+                      <td>Beca UNAB</td>
+                      <td>$100.000</td>
+                    </tr>
+                    <tr> 
+                      <td>Beca bicentenario</td>
+                      <td>$100.000</td>
+                    </tr>
+                    <tr> 
+                      <td><strong>Total</strong></td>
+                      <td><strong>$200.000</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--info-3">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__header">
+              <h4 class="modal__title">Nuevas becas y descuentos</h4>
+              <p class="modal__description">Corresponden a las nuevas becas y descuentos actualizadas:</p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__table"> 
+                <table> 
+                  <thead> 
+                    <tr> 
+                      <th>Beneficio</th>
+                      <th>Monto</th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                    <tr> 
+                      <td>Beca UNAB</td>
+                      <td>$200.000</td>
+                    </tr>
+                    <tr> 
+                      <td>Beca bicentenario</td>
+                      <td>$200.000</td>
+                    </tr>
+                    <tr> 
+                      <td><strong>Total</strong></td>
+                      <td><strong>$400.000</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="modal modal--login">
         <div class="modal__back"></div>
         <div class="modal__front">
